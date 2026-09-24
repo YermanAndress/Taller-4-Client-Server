@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { UsersPage } from './pages/users/users.page';
 import { ProductsPage } from './pages/products/products.page';
+import { SalesPage } from './pages/sales/sales.page';
 
 /**
  * Definición de las rutas principales de la aplicación.
@@ -16,6 +17,7 @@ import { ProductsPage } from './pages/products/products.page';
  *
  * @see {@link UsersPage}
  * @see {@link ProductsPage}
+ * @see {@link SalesPage}
  */
 export const routes: Routes = [
 
@@ -36,6 +38,15 @@ export const routes: Routes = [
    * de mostrar y gestionar el listado de productos.
    */
   { path: 'products', component: ProductsPage },
+
+  /**
+   * Ruta de ventas.
+   *
+   * @remarks
+   * Renderiza el componente `SalesPage`, encargado
+   * de mostrar y gestionar el listado de ventas.
+   */
+  { path: 'sales', component: SalesPage },
 
   /**
    * Ruta comodín.
