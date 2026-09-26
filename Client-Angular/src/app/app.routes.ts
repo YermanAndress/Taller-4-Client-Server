@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { UsersPage } from './pages/users/users.page';
 import { ProductsPage } from './pages/products/products.page';
+import { InventoryPage } from './pages/inventory/inventory.page';
 import { SalesPage } from './pages/sales/sales.page';
 
 /**
@@ -18,6 +19,7 @@ import { SalesPage } from './pages/sales/sales.page';
  * @see {@link UsersPage}
  * @see {@link ProductsPage}
  * @see {@link SalesPage}
+ * @see {@link InventoryPage}
  */
 export const routes: Routes = [
 
@@ -47,6 +49,15 @@ export const routes: Routes = [
    * de mostrar y gestionar el listado de ventas.
    */
   { path: 'sales', component: SalesPage },
+
+  /**
+   * Ruta de inventario.
+   *
+   * @remarks
+   * Renderiza el componente `InventoryPage`, encargado
+   * de mostrar y gestionar el listado del inventario.
+   */
+  { path: 'inventory', component: InventoryPage },
 
   /**
    * Ruta comodín.
