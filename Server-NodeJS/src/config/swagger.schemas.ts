@@ -110,4 +110,42 @@
  *             - Cancelada
  *           example: Completada
  */
+/**
+ * @openapi
+ * components:
+ *   schemas:
+ *     Inventory:
+ *       type: object
+ *       description: Representa un registro de inventario del sistema
+ *       required:
+ *         - id
+ *         - product
+ *         - quantity
+ *         - minStock
+ *         - warehouse
+ *         - status
+ *       properties:
+ *         id:
+ *           type: number
+ *           example: 1
+ *         product:
+ *           type: string
+ *           example: Leche entera
+ *         quantity:
+ *           type: number
+ *           example: 50
+ *         minStock:
+ *           type: number
+ *           example: 20
+ *         warehouse:
+ *           type: string
+ *           example: Refrigerado
+ *         status:
+ *           type: string
+ *           enum:
+ *             - Disponible
+ *             - Stock bajo
+ *             - Agotado
+ *           example: Disponible
+ */
 export {};
