@@ -1,0 +1,29 @@
+<table class="table table-striped border">
+	<thead>
+		<tr>
+			<th scope="col">Id</th>
+			<th scope="col">Producto</th>
+			<th scope="col">Cantidad</th>
+			<th scope="col">Stock mínimo</th>
+			<th scope="col">Bodega</th>
+			<th scope="col">Estado</th>
+		</tr>
+	</thead>
+	<tbody>
+		@for (item of inventory; track item) {
+			<tr>
+				<th scope="row">{{ item.id }}</th>
+				<td>{{ item.product }}</td>
+				<td>{{ item.quantity }}</td>
+				<td>{{ item.minStock }}</td>
+				<td>{{ item.warehouse }}</td>
+				<td>
+					<dsb-badge-atom 
+						[text]="item.status"
+						[type]="statusMap[item.status]" >
+					</dsb-badge-atom>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
