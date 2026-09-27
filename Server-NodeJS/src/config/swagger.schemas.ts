@@ -148,4 +148,42 @@
  *             - Agotado
  *           example: Disponible
  */
+/**
+ * @openapi
+ * components:
+ *   schemas:
+ *     Employee:
+ *       type: object
+ *       description: Representa un empleado del sistema
+ *       required:
+ *         - id
+ *         - name
+ *         - position
+ *         - department
+ *         - salary
+ *         - status
+ *       properties:
+ *         id:
+ *           type: number
+ *           example: 1
+ *         name:
+ *           type: string
+ *           example: María García
+ *         position:
+ *           type: string
+ *           example: Cajera
+ *         department:
+ *           type: string
+ *           example: Caja
+ *         salary:
+ *           type: number
+ *           example: 1425000
+ *         status:
+ *           type: string
+ *           enum:
+ *             - Activo
+ *             - Vacaciones
+ *             - Inactivo
+ *           example: Activo
+ */
 export {};

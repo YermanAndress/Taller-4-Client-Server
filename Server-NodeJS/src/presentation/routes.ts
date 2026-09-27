@@ -3,6 +3,7 @@ import { UsersRoutes } from "./modules/users/users.routes";
 import { ProductsRoutes } from "./modules/products/products.routes";
 import { InventoryRoutes } from "./modules/inventory/inventory.routes";
 import { SalesRoutes } from "./modules/sales/sales.routes";
+import { EmployeesRoutes } from "./modules/employees/employees.routes";
 
 /**
  * Clase encargada de centralizar todas las rutas de la aplicación.
@@ -35,6 +36,7 @@ export class AppRoutes {
     router.use("/api/products", ProductsRoutes.routes);
     router.use("/api/inventory", InventoryRoutes.routes);
     router.use("/api/sales", SalesRoutes.routes);
+    router.use("/api/employees", EmployeesRoutes.routes);
 
     return router;
   }
