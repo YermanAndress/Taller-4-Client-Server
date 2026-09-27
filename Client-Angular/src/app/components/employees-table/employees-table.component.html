@@ -1,0 +1,29 @@
+<table class="table table-striped border">
+	<thead>
+		<tr>
+			<th scope="col">Id</th>
+			<th scope="col">Nombre</th>
+			<th scope="col">Cargo</th>
+			<th scope="col">Departamento</th>
+			<th scope="col">Salario</th>
+			<th scope="col">Estado</th>
+		</tr>
+	</thead>
+	<tbody>
+		@for (item of employees; track item) {
+			<tr>
+				<th scope="row">{{ item.id }}</th>
+				<td>{{ item.name }}</td>
+				<td>{{ item.position }}</td>
+				<td>{{ item.department }}</td>
+				<td>{{ item.salary }}</td>
+				<td>
+					<dsb-badge-atom 
+						[text]="item.status"
+						[type]="statusMap[item.status]" >
+					</dsb-badge-atom>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
