@@ -61,6 +61,7 @@ export class App {
       { text: 'Productos', url: '/products' },
       { text: 'Ventas', url: '/sales' },
       { text: 'Inventario', url: '/inventory' },
+      { text: 'Empleados', url: '/employees' },
     ]
   };
 }
